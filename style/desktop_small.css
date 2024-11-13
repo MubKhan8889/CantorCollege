@@ -1,0 +1,261 @@
+/*Import font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Set the default style of the entire website */
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Classes */
+
+.images-vertical {
+   height: 100%;
+}
+
+.images-horizontal {
+    width: 100%;
+ }
+
+.before-content-image {
+    width: auto;
+    height: 100%;
+}
+
+.link-to-section {
+    display: inline;
+    width: 390px;
+    height: 100%;
+
+    padding: 10px;
+
+    background-color: #f2a903;
+}
+
+.link-to-section img {
+    width: 100%;
+}
+
+.link-to-section p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link-to-section h2 {
+    position: absolute;
+
+    color: #ffffff;
+    background-color: #222222;
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+.link-to-section button {
+    transition: 0.5s;
+    
+    position: static;
+    top: 35px;
+
+    margin: 0px;
+    border-width: 0px;
+
+    width: 100%;
+    height: 70px;
+
+    font-size: 20;
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #ffd473;
+    color: #222222;
+
+    cursor:pointer;
+}
+
+.link-to-section button:hover {
+    transition: 0.5s;
+
+    background-color: #ffe4a6;
+    color: #222222;
+
+    cursor:pointer;
+}
+
+.content-small img {
+    display: inline;
+}
+
+.content-large img {
+    display: inline;
+}
+
+.content-image-only {
+    display: inline;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* CSS for the header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
+
+    background-color: #533f0e;
+
+    width: auto;
+    height: 80px;
+}
+
+#header button {
+    transition: 0.25s;
+
+    width: 80px;
+    height: auto;
+
+    border: 0px;
+
+    background-color: #533f0e;
+    background-image: url("../images/menus.png");
+
+    cursor: pointer;
+}
+
+#header button:active {
+    transition: 0.25s;
+    background-color: #59481f;
+}
+
+#header a {
+    display: none;
+}
+
+/* CSS for the mobile only links to other webpages */
+/* Since this should only be a thing for mobile web pages, this is hidden on desktop */
+#mobile-links {
+    z-index: 1;
+
+    transition: top 0.5s;
+    transition-timing-function: ease-out;
+
+    position: absolute;
+    top: -425px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-links a {
+    transition: 0.25s;
+
+    font-size: 25px;
+    padding: 5px;
+    border-top: 5px solid #533f0e;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #574b2b;
+    color: #ffffff;
+}
+
+#mobile-links a:active {
+    transition: 0.25s;
+
+    background-color: #595038;
+    color: #ffffff;
+}
+
+/* CSS for the thing before the content of the page */
+#before-content {
+    transition: 2s;
+    height: 300px;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url("../images/IMG1Cropped.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#before-content h1 {
+    text-align: center;
+    color: #ffffff;
+
+    text-shadow: 0px 0px 4px #222222;
+}
+
+/* CSS for the content of the page */
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    justify-content: center;
+
+    min-height: 750px;
+    height: auto;
+
+    font-size: 20px;
+}
+
+#content div {
+    align-self: start;
+    
+    margin: 25px;
+    color: #222222;
+}
+
+.content-image-only {
+    max-width: 50%;
+    min-width: 350px;
+}
+
+.content-small {
+    max-width: 50%;
+    min-width: 350px;
+}
+
+.content-large {
+    max-width: 75%;
+    min-width: 350px;
+}
+
+#content div p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+#content div h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+}
+
+/* CSS for the footer */
+#footer {
+    display: flex;
+    justify-content: center;
+
+    width: auto;
+    height: 120px;
+
+    font-size: 12px;
+
+    color: #cccccc;
+    background-color: #222222;
+}
+
+#footer div {
+    padding: 10px;
+    width: 200px;
+}
+
+#footer div p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
